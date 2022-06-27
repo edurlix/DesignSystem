@@ -1,0 +1,81 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.header{
+    margin-top: 0px;
+    background-color: #fff;
+    height: 90px;
+}
+
+.text-logo{
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 100px;
+}
+
+.banners{
+    width: 45%;
+}
+
+.content .banners h1{
+    font-size: 70px;
+    margin-top: 100px;
+    text-align: left;
+    padding-left: 30px;
+}
+
+.banners div{
+    font-size: 20px;
+    margin-top: 100px;
+    padding: 30px;
+}
+
+.content img{
+    width: 400px;
+    height: 400px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.side ul{
+    margin-top: 50px;
+}
+
+.side li a{
+    font-size: 16px;
+    line-height: 40px;
+    text-decoration: none;
+}
+
+.side li::before{
+    content: '>';
+    font-size: 16px;
+}
+
+.neon-text{
+    color: #fff;
+    text-shadow: 
+        0 0 7px rgb(252, 252, 252),
+        0 0 10px rgb(66, 228, 220),
+        0 0 21px rgb(33, 209, 200),
+        0 0 42px rgb(18, 24, 24),
+        0 0 82px rgb(79, 170, 255),
+        0 0 92px rgb(23, 188, 218);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}

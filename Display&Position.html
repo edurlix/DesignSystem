@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Design System</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="Display&Position.css">
+    </head>
+    <body>
+        <!-- Header -->
+        <header class="header">
+            <div class="img-logo">
+                <img src="" alt="">
+            </div>
+            <div class="text-logo">
+                <a href="index.html"><h1>Design System</h1></a>
+            </div>
+        </header>
+
+        <!-- content -->
+        <main class="content-display neon">
+           <div class="content-1">
+            <div class="position">
+                <h1>Position</h1>
+                <p>position property specifies the type of positioning method used for an element</p>
+                <p>There are five different position values:</p>
+                <ul>
+                    <li><a href="#static">Static</a></li>
+                    <li><a href="#relative">Relative</a></li>
+                    <li><a href="#fixed">Fixed</a></li>
+                    <li><a href="#absolute">Absolute</a></li>
+                    <li><a href="#sticky">Sticky</a></li>
+                </ul>
+                <p>Element are then positioned using the top, bottom, left and right properties. However, these properties wil not work unless the position property is set first.</p>
+            </div>
+            <hr>
+            <div id="static">
+                <h2>Static</h2>
+                <p>is not positioned in any special way; it is always positioned according to the normal flow of the page</p>
+                <div class="example">
+                    <div class="static-example">
+                        <p>This div element has position static. It's cant be affect by position elements</p>
+                    </div>
+                    <div class="code-example">
+                        <p>
+                            .static-example { <br>
+                                position: static; <br>
+                                border: 3px solid black <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="relative">
+                <h2>Relative</h2>
+                <p>an element with relative position, is positioned to its normal position</p>
+                <p>setting the top, right, bottom, left properties of a relatively-positioned element will cause it to be ajusted away from its normal position.</p>
+                <div class="example">
+                    <div class="relative-example">
+                        <p>This div element has position relative.</p>
+                    </div>
+                    <div class="code-example">
+                        <p>
+                            .relative-example { <br>
+                                position: relative; <br>
+                                left: 30px <br>
+                                border: 3px solid black <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="fixed">
+                <h2>fixed</h2>
+                <p>is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. the top, right, bottom, and left properties are used to position the element.</p>
+                <div class="example">
+                    <div class="fixed-example">
+                        <p>This div element has position: fixed</p>
+                    </div>
+                    <div class="code-example">
+                        <p>
+                            .fixed-example { <br>
+                                position: fixed; <br>
+                                bottom: 0; <br>
+                                right: 0; <br>
+                                width: 300px; <br>
+                                border: 3px solid black <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="absolute">
+                <h2>Absolute</h2>
+                <p>absolute positioned element are removed from the normal flow, and can overlap elements</p>
+                <div class="example">
+                    <div class="relative-absolute">
+                        <p>this div element has position relative</p>
+                        <div class="absolute-example">
+                            <p>This div element has position absolute</p>
+                        </div>
+                    </div>
+                    <div class="code-example">
+                        <p>
+                            .relative-absolute { <br>
+                                position: relative; <br>
+                                width: 400px; <br>
+                                height: 200px; <br>
+                                border: 3px solid black <br>
+                            } <br>
+                            .aboslute-example { <br>
+                                position: absolute; <br>
+                                top: 80px; <br>
+                                right: 0; <br>
+                                width: 200px; <br>
+                                height: 100px; <br>
+                                border: 3px solid black <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="sticky">
+                <h2>Sticky</h2>
+                <p>is positioned based on the user's scroll position</p>
+                <div class="example">
+                    <div class="sticky-overflow">
+                        <div class="sticky-example">
+                            <p>This div element has position: sticky</p>
+                        </div>
+                    </div>
+                    <div class="code-example">
+                        <p>
+                            .sticky-example { <br>
+                                position: sticky; <br>
+                                background-color: green
+                                top: 0; <br>
+                                border: 2px solid black <br>
+                            }
+                        </p>
+                    </div>
+                </div>
+            </div>
+           </div>
+            <div class="content-2">
+                <div class="Display">
+                    <h1>Display</h1>
+                    <p>The display property is the most important CSS property for controlling layout</p>
+                    <p>Every HTML element has a default display value depending on what type of element it is. The default display value for most elements is block or inline.</p>
+                </div>
+                <hr>
+                <div>
+                    <h2>Block element</h2>
+                    <p>A block level element always starts on a new line and takes up the full width available</p>
+                    <div class="block">
+                        <p>The div element is a block level element.</p>
+                    </div>
+                    <p>Examples of block elements:</p>
+                    <ul>
+                        <li>div</li>
+                        <li>h1 - h6</li>
+                        <li>form</li>
+                        <li>p</li>
+                        <li>header</li>
+                        <li>footer</li>
+                        <li>section</li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <h2>Inline elements</h2>
+                    <p>An inline element does not start on a new line and only takes up as much width as necessary.</p>
+                    <p>This is <span>an inline span element inside</span> a paragraph</p>
+                    <p>Examples of inline elements:</p>
+                    <ul>
+                        <li>span</li>
+                        <li>a</li>
+                        <li>img</li>
+                    </ul>
+                </div>
+                <hr>
+                <div>
+                    <h2>Inline-block</h2>
+                    <p>compare to inline, the major difference is that inline-block allows to set a width and heigh on the element.</p>
+                    <p>also with inline-block the top and bottom margins/paddings are respected.</p>
+                    <p>Compare to block, the major difference is that inline-block does not add a line-break after the element, so the element can sit next to other elements</p>
+                </div>
+                <hr>
+                <div>
+                    <h2>None</h2>
+                    <p>none is commonly used with javascript to hide and show elements without deleting and recreating them.</p>
+                </div>
+            </div>
+            
+        </main>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+.content-box{
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.margin, .border,.padding,.Content{
+    text-align: center;
+    padding: 20px;
+}
+
+.margin{
+    background-color: coral;
+}
+.border{
+    background-color: chartreuse;
+}
+.padding{
+    background-color: steelblue;
+}
+.Content{
+    background-color: black;
+}
